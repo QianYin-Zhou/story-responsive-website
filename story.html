@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Stories | New Zealand Story | Building a nation of storytellers</title>
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/theme.css" type="text/css">
+	<link rel="stylesheet" href="css/public.css" type="text/css">
+	<!-- css code -->
+	<style>
+		.story-box {
+			margin-top: 100px;
+			width: 100%;
+			background-position: center center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			-webkit-background-size: cover;
+			-o-background-size: cover;
+			background-image: url("https://www.nzstory.govt.nz/assets/Stories1000x666/eba9a263d7/NZStory_3717_website-fashion-2__FillWzk2MCwxMDgwXQ.jpg");
+		}
+
+		.myContainer.story-container {
+			padding-top: 5%;
+			background-color: rgba(0, 0, 0, .25);
+		}
+
+		.story-header {
+			display: flex;
+			justify-content: flex-start;
+			align-items: center;
+			flex-direction: column;
+			padding: 5%;
+			padding-top: 0%;
+			box-sizing: border-box;
+		}
+
+		.story-header>span {
+			font-family: gotham book;
+			text-transform: uppercase;
+			letter-spacing: 1px;
+			line-height: normal;
+			font-weight: 500;
+			font-size: 11px;
+			color: white;
+		}
+
+		.story-header>h4 {
+			font-size: 45px;
+			text-align: center;
+			font-family: knockout;
+			text-transform: uppercase;
+			letter-spacing: 1px;
+			line-height: 1;
+			font-weight: 400;
+			color: white;
+			margin-bottom: 30px;
+			margin-top: 5%;
+		}
+
+		.story-header>small {
+			font-size: 13px;
+			font-weight: 400;
+			line-height: 2;
+			font-family: Gotham Book;
+			color: white;
+			text-align: center;
+			margin-bottom: 30px;
+		}
+
+		.story-sub-box .news-img {
+			width: 100%;
+			transition: .5s;
+		}
+
+		.story-sub-box .news-img:hover {
+			transform: scale(1.1);
+			cursor: pointer;
+			background-color: rgba(0, 0, 0, 0.48);
+		}
+
+		.story-sub-box .sub-header {
+			font-family: gotham book;
+			text-transform: uppercase;
+			letter-spacing: 1px;
+			line-height: normal;
+			font-weight: 500;
+			font-size: 11px;
+			margin-top: 1.5em;
+		}
+
+		.story-sub-box .header {
+			font-family: gotham book;
+			display: inline-block;
+			border-bottom: 3px solid transparent;
+			transition: all .2s ease-in-out;
+			font-size: 27px;
+			text-transform: uppercase;
+			line-height: 1.2;
+			font-weight: bolder;
+			color: black;
+			margin: .625rem 0 0;
+		}
+
+		.story-sub-box .body {
+			color: #1a1a1a;
+			font-family: gotham book;
+			text-transform: none;
+			letter-spacing: normal;
+			font-weight: 400;
+			line-height: 1.8;
+			font-size: 14px;
+			margin: .625rem 0 .625rem 0;
+		}
+	</style>
+</head>
+
+<body>
+	<nav class="navbar navbar-default navbar-style navbar-fixed-top" role="navigation">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example-navbar-collapse">
+					<span class="sr-only">切换导航</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="myLogo" href="index.html"></a>
+			</div>
+			<div class="collapse navbar-collapse navbar-right" id="example-navbar-collapse">
+				<ul class="nav navbar-nav">
+					<li><a href="resource.html" class="myNavLink">Resources</a></li>
+					<li><a href="story.html" class="myNavLink">Stories</a></li>
+					<li><a href="news.html" class="myNavLink">News</a></li>
+					<li><a href="us.html" class="myNavLink">Who we are</a></li>
+					<li><a class="glyphicon glyphicon-search"></a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<div class="story-box">
+		<div class="myContainer story-container">
+			<div class="row">
+				<div class="col-md-6">
+					<p class="public-header" style="color: white">STORIES -</p>
+					<p class="public-header" style="color: #c1c3c7;">NGĀ KŌRERO</p>
+				</div>
+				<div class="col-md-6 story-header">
+					<span>FEATURED STORY</span>
+					<h4>NEW ZEALAND DESIGNERS DRESSING THE WORLD</h4>
+					<small>Michelle Obama, Meghan Markle, Beyonce and Will.I.Am. They are just some of the rich, royal, and famous
+						from around the world who rely on New Zealand fashion designers to look their best. </small>
+					<p class="info-foot" style="color: white;">READ MORE</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="myContainer">
+		<div class="divide"></div>
+		<div class="row">
+			<div class="col-md-10">
+				<ul class="breadcrumb myBreadcrumb">
+					<li class="active"><a href="#">View all</a></li>
+					<li><a href="#">Culture</a></li>
+					<li><a href="#">Innovation</a></li>
+					<li><a href="#">Sustainability</a></li>
+					<li><a href="#">Society</a></li>
+					<li><a href="#">Creativity</a></li>
+				</ul>
+			</div>
+			<div class="col-md-2">
+				<div class="btn-group" style="width: 100%;">
+					<button type="button" class="btn btn-default" style="padding: 5% 22%;">Most recent</button>
+					<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" style="padding: 5% 4%;">
+						<span class="caret"></span>
+						<span class="sr-only">切换下拉菜单</span>
+					</button>
+					<ul class="dropdown-menu" role="menu">
+						<li><a href="#">Most recent</a></li>
+						<li><a href="#">Old</a></li>
+						<li class="divider"></li>
+						<li><a href="#">Most popular</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- 分割线 -->
+		<div class="divide"></div>
+		<div class="row">
+			<div class="col-md-6" style="padding: 0.4%;box-sizing: border-box;">
+				<div class="myNormalContent">
+					<span class="glyphicon glyphicon-play-circle myIcon" style="font-size: 35px;"></span>
+					<img src="./img/Rowi__FillWzEzNjAsOTIwXQ.jpg">
+					<div class="normal-content">
+						<span class="sub-header">sustainability</span>
+						<h4 class="header">Putting out the call for Bird of the...</h4>
+						<p class="body">Forest & Bird’s Bird of the Year competition
+							aims to raise awareness of New Zealand’s endangered bird
+							species, and every year Kiwis flock to the polls to
+							decide who will take out the top honour. </p>
+						<span class="footer">
+							<small>Read this story</small>
+							&nbsp;&nbsp;&nbsp;
+							<span class="glyphicon glyphicon-arrow-right"></span>
+						</span>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6" style="padding: 0.4%;box-sizing: border-box;">
+				<div class="myNormalContent">
+					<span class="glyphicon glyphicon-play-circle myIcon" style="font-size: 35px;"></span>
+					<img src="./img/Pie-stack-web__FillWzEzNjAsOTIwXQ.jpg">
+					<div class="normal-content">
+						<span class="sub-header">Culture</span>
+						<h4 class="header">Are pies the national dish of New...</h4>
+						<p class="body">Some would say it’s fush and chups. But
+							we beg to differ. The tasty pie is widely regarded as
+							a New Zealand culinary icon and staple. It comes pipin’
+							hot with crispy pastry and chock full of a...</p>
+						<span class="footer">
+							<small>Read this story</small>
+							&nbsp;&nbsp;&nbsp;
+							<span class="glyphicon glyphicon-arrow-right"></span>
+						</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<hr class="myHr" />
+		<div class="row">
+			<div class="col-md-4 story-sub-box">
+				<span class="glyphicon glyphicon-play-circle myIcon" style="font-size: 45px;"></span>
+				<img src="./img/Fred-Hollows-Image-1__FillWzkwMCw2MjBd.jpeg" alt="" class="news-img">
+				<h4 class="sub-header">society</h4>
+				<a href="#" class="header">Restoring eyesight to thousands</a>
+				<p class="body">New Zealand eye surgeon Fred Hollows pioneered
+					a way to give the gift of sight back to those who could never
+					have afforded it, and he found a way to do it for as little
+					as $25.</p>
+
+			</div>
+			<div class="col-md-4 story-sub-box">
+				<span class="glyphicon glyphicon-play-circle myIcon" style="font-size: 45px;"></span>
+				<img src="./img/Ali-Al-Saloom_1789x895_filter_25__FillWzkwMCw2MjBd.jpg" alt="" class="news-img">
+				<h4 class="sub-header">society</h4>
+				<a href="#" class="header">Inside Stories Middle East Film</a>
+				<p class="body">In this film from the Inside Stories series,
+					Kiwis and people from the Middle East share stories about
+					why they love New Zealand.</p>
+			</div>
+			<div class="col-md-4 story-sub-box">
+				<span class="glyphicon glyphicon-play-circle myIcon" style="font-size: 45px;"></span>
+				<img src="./img/NZ_Story_Coffee-1-25__FillWzkwMCw2MjBd.png" alt="" class="news-img">
+				<h4 class="sub-header">Culture</h4>
+				<a href="#" class="header">Who invented the flat white?</a>
+				<p class="body">Five years ago, you would have been hard
+					pressed to find a Flat White outside of New Zealand and
+					Australia. Now the coffee is popping up across the globe
+					and becoming the go-to drink for coffee...</p>
+			</div>
+		</div>
+		<hr class="myHr" />
+		<div class="row">
+			<div class="col-md-3 story-sub-box">
+				<span class="glyphicon glyphicon-play-circle myIcon" style="font-size: 40px;"></span>
+				<img src="https://www.nzstory.govt.nz/assets/Uploads/9e11b5818c/Kate-Sheppard-blog__FillWzkwMCw2MjBd.jpg" alt=""
+					class="news-img">
+				<h4 class="sub-header">society</h4>
+				<a href="#" class="header">Restoring eyesight to thousands</a>
+				<p class="body">New Zealand eye surgeon Fred Hollows pioneered
+					a way to give the gift of sight back to those who could never
+					have afforded it, and he found a way to do it for as little
+					as $25.</p>
+			</div>
+			<div class="col-md-3 story-sub-box">
+				<span class="glyphicon glyphicon-play-circle myIcon" style="font-size: 40px;"></span>
+				<img src="https://www.nzstory.govt.nz/assets/Stories1000x666/77d34eb4b8/Haka-web-1-v2__FillWzkwMCw2MjBd.jpg"
+					alt="" class="news-img">
+				<h4 class="sub-header">society</h4>
+				<a href="#" class="header">Inside Stories Middle East Film</a>
+				<p class="body">Te reo Māori is the indigenous language of Aotearoa,
+					New Zealand and is one of three official languages.</p>
+			</div>
+			<div class="col-md-3 story-sub-box">
+				<span class="glyphicon glyphicon-play-circle myIcon" style="font-size: 40px;"></span>
+				<img
+					src="https://www.nzstory.govt.nz/assets/Stories1000x666/42eff272e1/NZStory-honey-24-_Q2A7611-A__FillWzkwMCw2MjBd.png"
+					alt="" class="news-img">
+				<h4 class="sub-header">Culture</h4>
+				<a href="#" class="header">Who invented the flat white?</a>
+				<p class="body">Five years ago, you would have been hard
+					pressed to find a Flat White outside of New Zealand and
+					Australia. Now the coffee is popping up across the globe
+					and becoming the go-to drink for coffee...</p>
+			</div>
+			<div class="col-md-3 story-sub-box">
+				<span class="glyphicon glyphicon-play-circle myIcon" style="font-size: 40px;"></span>
+				<img
+					src="https://www.nzstory.govt.nz/assets/Stories1000x666/fc9acc562f/VRemedies-Social-Story-Image__FillWzkwMCw2MjBd.png"
+					alt="" class="news-img">
+				<h4 class="sub-header">Culture</h4>
+				<a href="#" class="header">Who invented the flat white?</a>
+				<p class="body">Five years ago, you would have been hard
+					pressed to find a Flat White outside of New Zealand and
+					Australia. Now the coffee is popping up across the globe
+					pressed to find a Flat White outside of New Zealand and
+					Australia. Now the coffee is popping up across the globe
+					and becoming the go-to drink for coffee...</p>
+			</div>
+		</div>
+		<div class="divide"></div>
+		<div class="divide"></div>
+		<div class="row">
+			<div class="col-md-12 text-center">
+				<span class="info-foot">Load More</span>
+			</div>
+		</div>
+	</div>
+	<div class="divide"></div>
+	<div class="divide"></div>
+
+	<footer class="myContainer myFooter">
+		<div class="row">
+			<div class="col-md-6">
+				<div class="row">
+					<div class="col-md-6">
+						<span class="tip1">About Us</span>
+						<a href="us.html" class="footer-link">Who we are</a>
+						<a href="story.html" class="footer-link">Our Story</a>
+						<a href="news.html" class="footer-link">News & Media</a>
+						<a href="touch.html" class="footer-link">Contact Us</a>
+						<a href="question.html" class="footer-link">FAQ's</a>
+					</div>
+					<div class="col-md-6">
+						<span class="tip1">Connected with</span>
+						<a href="#" class="footer-link">enz.govt.nz</a>
+						<a href="#" class="footer-link">mfat.govt.nz</a>
+						<a href="#" class="footer-link">mpi.govt.nz</a>
+						<a href="#" class="footer-link">nzte.govt.nz</a>
+						<a href="#" class="footer-link">tpk.govt.nz</a>
+						<a href="#" class="footer-link">tourismnewzealand.com</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<span class="tip2">Stay connected with us. Subscribe
+					to our newsletter for the latest news, updates and
+					resourceources</span>
+				<div class="row" style="display: flex;align-items: center;">
+					<div class="col-md-5 col-xs-5">
+						<span class="footer-font">First Name</span>
+					</div>
+					<div class="col-md-6 col-xs-5">
+						<span class="footer-font">Email</span>
+					</div>
+					<div class="col-md-1 col-xs-2">
+						<span class="glyphicon glyphicon-arrow-right" style="color:var(--theme-color);font-size:10px;"></span>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-5 col-xs-5">
+						<input type="text" class="footer-input" />
+					</div>
+					<div class="col-md-7 col-xs-7">
+						<input type="email" class="footer-input" />
+					</div>
+				</div>
+				<span class="footer-font">Recaptcha</span>
+			</div>
+		</div>
+		<div class="row" style="display: flex;align-items: center;margin-top: 120px">
+			<div class="col-md-4">
+				<span class="footer-font">2020 © New Zealand Story | Building a nation of storytellers </span>
+			</div>
+			<div class="col-md-3">
+				<a href="#" class="footer-font">Privacy Statement</a>
+			</div>
+			<div class="col-md-5 text-right">
+				<span class="footer-round"></span>
+				<span class="footer-round"></span>
+				<span class="footer-round"></span>
+				<span class="footer-round"></span>
+				<span class="footer-round"></span>
+			</div>
+		</div>
+	</footer>
+
+	<!-- javascript part -->
+	<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+	<script src="https://cdn.staticfile.org/twitter-bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<script src="./js/public.js"></script>
+</body>
+
+</html>

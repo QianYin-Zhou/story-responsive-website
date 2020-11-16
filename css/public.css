@@ -1,0 +1,303 @@
+/* 
+  公共部分：
+	1. 导航栏及其响应式
+	2. 底部及其响应式
+	3. 子网页公共文字和面包屑导航
+	4. 其它公共代码
+*/
+
+/* 1.导航栏 */
+.navbar-style {
+	border: 0px;
+	z-index: 99;
+	padding: 15px;
+	transition: var(--my-transition);
+	background-color: white;
+	color: black;
+}
+
+.navbar-style ul {
+	margin-top: 10px;
+}
+
+.navbar-style li a {
+	color: black !important;
+}
+
+.navbar-style li a:hover {
+	color: black;
+	background-color: var(--theme-color) !important;
+	border-radius: 5px;
+}
+
+.myLogo {
+	display: block;
+	width: 200px;
+	height: 68px;
+	max-width: 40vw;
+	max-height: 15vw;
+	transition: height .3s ease-in-out 0s;
+	background-image: url("../img/nzstory_logo_dark.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.myNavLink {
+	font-family: gotham book;
+	color: black;
+	font-weight: 500;
+}
+
+.navbar-style-down {
+	box-shadow: 0 0 30px rgba(0, 0, 0, .09);
+}
+
+/* 2. 底部 */
+.myContainer {
+	box-sizing: border-box;
+	width: 100%;
+	padding: var(--md-padding);
+	overflow: hidden;
+}
+
+.myContainer.myFooter {
+	background: #1a1a1a;
+	padding-top: 11%;
+	padding-bottom: 5%;
+}
+
+.myFooter .tip1 {
+	display: block;
+	font-weight: bolder;
+	font-size: 19px;
+	letter-spacing: 1px;
+	font-family: gotham book;
+	color: white;
+}
+
+.myFooter .tip2 {
+	font-family: gotham book;
+	line-height: 1.8em;
+	font-size: 18px;
+	font-weight: lighter;
+	color: white;
+}
+
+.myFooter .footer-link {
+	display: block;
+	color: #97989a;
+	text-decoration: none;
+	transition: color .3s ease-in-out 0s;
+	font-weight: 400;
+	font-size: 15px;
+	line-height: 1.9rem;
+	margin: 6% 0;
+}
+
+.myFooter .footer-link:hover {
+	color: white;
+}
+
+.myFooter .footer-font {
+	display: block;
+	font-weight: 600;
+	font-size: 13px;
+	color: #97989a;
+	margin: 5% 0;
+}
+
+.myFooter .footer-input {
+	width: 100%;
+	border: 0;
+	outline: none;
+	border-bottom: 1px solid #97989a;
+	background-color: transparent;
+	font-size: 18px;
+	color: white;
+}
+
+.footer-input:focus {
+	outline: none;
+	border-bottom: 1px solid white;
+}
+
+.myFooter .footer-round {
+	display: inline-block;
+	margin: 3%;
+	width: 55px;
+	height: 55px;
+	border-radius: 50%;
+	border: 1px solid var(--theme-color);
+	transition: var(--my-transition);
+}
+
+.footer-round:hover {
+	background-color: var(--theme-color);
+}
+
+
+/* 3.公共字和面包屑导航 */
+.public-header {
+	font-size: 54px;
+	font-family: knockout;
+	text-transform: uppercase;
+	letter-spacing: .5px;
+	line-height: 1;
+	font-weight: 400;
+}
+
+.myBreadcrumb {
+	background-color: transparent;
+	margin-left: -1%;
+}
+
+.myBreadcrumb>li>a {
+	font-family: gotham book;
+	color: rgba(33, 33, 33, .5);
+	font-weight: bold;
+	transition: color .3s ease-in-out 0s;
+	margin: 0;
+	font-size: 14px;
+	letter-spacing: 1px;
+}
+
+.myBreadcrumb>li>a:hover {
+	color: var(--theme-color);
+	text-decoration: none;
+}
+
+.myBreadcrumb .active a {
+	color: var(--theme-color);
+}
+
+/* 4.其它公共代码 */
+
+.info-foot {
+	display: inline-block;
+	transition: all .2s ease-in-out;
+	padding: 0.825rem .1rem;
+	border-bottom: 2px solid var(--theme-color);
+	font-family: gotham book;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: bold;
+	font-size: 11px;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	word-break: break-all;
+}
+
+.info-foot:hover {
+	border-color: black;
+}
+
+.myNormalContent {
+	padding: 0px;
+	position: relative;
+}
+
+.myNormalContent>img {
+	width: 100%;
+}
+
+.normal-content {
+	cursor: pointer;
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0px;
+	box-sizing: border-box;
+	padding: 9%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	/* transition: top .45s ease-in-out; */
+}
+
+.normal-content:hover {
+	top: 0px;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.normal-content:hover .body {
+	display: block
+}
+
+.normal-content:hover .footer {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: row;
+}
+
+.normal-content .sub-header {
+	font-family: gotham book;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	line-height: normal;
+	font-weight: 500;
+	font-size: 11px;
+	color: white;
+}
+
+.normal-content .header {
+	font-size: 34px;
+	font-family: knockout;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	line-height: 1;
+	font-weight: 400;
+	color: white;
+	margin-bottom: 30px;
+}
+
+.normal-content .body {
+	display: none;
+	font-size: 13px;
+	font-weight: 400;
+	line-height: 1.93;
+	font-family: Gotham Book;
+	color: white;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.normal-content .footer {
+	display: none;
+	color: white;
+}
+
+.normal-content .footer>small {
+	font-family: gotham book;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	line-height: normal;
+	font-weight: 500;
+	font-size: 11px;
+	color: white;
+}
+
+.normal-content .footer>span {
+	font-size: 12px;
+	color: var(--theme-color);
+}
+
+@media(max-width: 768px) {
+
+	.divide {
+		width: 100%;
+		height: 27px;
+	}
+
+	.myLogo {
+		display: block;
+		width: 130px;
+		height: 50px;
+		transition: height .3s ease-in-out 0s;
+		background-size: contain;
+		background-repeat: no-repeat;
+	}
+}

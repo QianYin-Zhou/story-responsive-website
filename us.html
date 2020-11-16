@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Our Story | New Zealand Story | Building a nation of storytellers</title>
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/theme.css" type="text/css">
+	<!-- css code -->
+	<link rel="stylesheet" href="css/index.css">
+	<style>
+		.us-container {
+			background-color: #212121;
+			padding-top: 18%;
+			padding-bottom: 8%;
+		}
+
+		.us-container .us-header {
+			font-size: 84px;
+			font-family: knockout;
+			text-transform: uppercase;
+			color: white;
+			line-height: 1;
+		}
+
+		.us-container .us-content {
+			font-size: 15px;
+			font-family: gotham book;
+			font-weight: 100;
+			line-height: 2;
+			color: white;
+			letter-spacing: 1px;
+			width: 50%;
+			margin-top: 2%;
+		}
+
+		.us-container .us-tips {
+			display: inline-block;
+			margin-top: 14%;
+			padding-bottom: 3px;
+			padding-left: 90px;
+			color: white;
+			border-bottom: 2px solid var(--theme-color);
+			transform-origin: 0 100%;
+			transform: rotate(-90deg);
+		}
+
+		.us-container .us-wrapper {
+			padding: 1%;
+			box-sizing: border-box;
+		}
+
+		.us-wrapper>div {
+			position: relative;
+			width: 100%;
+			min-height: 550px;
+			background-position: center center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			overflow: hidden;
+		}
+
+		.us-wrapper .w1 {
+			background-image: url("https://www.nzstory.govt.nz/assets/326ebea067/Charlie2sheep-232-A-v2.jpg");
+		}
+
+		.us-wrapper .w2 {
+			background-image: url("https://www.nzstory.govt.nz/assets/35bed0b9fc/01CWNZS_NZS_1007-v2.jpg");
+		}
+
+		.us-wrapper .w3 {
+			background-image: url("https://www.nzstory.govt.nz/assets/5b11fbe4e4/01CWNZS_NZS_9021-v2.jpg");
+		}
+
+		.us-wrapper .num {
+			position: absolute;
+			right: 70%;
+			bottom: 30%;
+			color: white;
+			font-family: gotham book;
+			font-weight: 700;
+			font-size: 11px;
+			letter-spacing: 2px;
+		}
+
+		.us-wrapper .line {
+			width: 100%;
+			height: 2px;
+			background-color: var(--theme-color);
+			position: absolute;
+			left: 25%;
+			bottom: 27%;
+		}
+
+		.us-wrapper .title {
+			font-family: knockout;
+			text-transform: uppercase;
+			font-weight: 300;
+			color: white;
+			position: absolute;
+			left: 25%;
+			bottom: 15%;
+			font-size: 35px;
+			letter-spacing: 1px;
+		}
+
+		.us-wrapper .hidden-box {
+			position: absolute;
+			top: 0;
+			left: 0;
+			background-color: transparent;
+			width: 100%;
+			height: 100%;
+			padding: 18% 9%;
+			box-sizing: border-box;
+			transition: all .25s ease;
+			display: none;
+		}
+
+		.us-wrapper>div:hover .hidden-box {
+			background-color: var(--theme-color);
+			cursor: pointer;
+			display: block;
+		}
+
+		.hidden-box .box-num {
+			color: black;
+			font-family: gotham book;
+			font-weight: 700;
+			font-size: 11px;
+			letter-spacing: 2px;
+		}
+
+		.hidden-box .box-body {
+			margin-top: 15%;
+			color: black;
+			font-family: gotham book;
+			font-weight: 300;
+			font-size: 16px;
+			line-height: 2;
+		}
+
+		/*  */
+		.header {
+			margin: 10% 0;
+			font-size: 50px;
+			font-family: knockout;
+			text-transform: uppercase;
+			font-weight: 300;
+			color: #212121;
+			line-height: 1;
+		}
+
+		.content {
+			color: black;
+			font-family: gotham book;
+			font-weight: 300;
+			font-size: 15px;
+			line-height: 1.7;
+			letter-spacing: .4px;
+		}
+
+		.decoration {
+			position: absolute;
+			top: 20%;
+			left: 5%;
+			width: 30%;
+			height: 2px;
+			background-color: var(--theme-color);
+			border-radius: 7px;
+		}
+
+		.picture {
+			width: 100%;
+			float: right;
+			margin-right: -18%;
+		}
+	</style>
+</head>
+
+<body>
+	<nav class="navbar navbar-default navbar-style navbar-fixed-top" role="navigation">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example-navbar-collapse">
+					<span class="sr-only">切换导航</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="myLogo" href="index.html"></a>
+			</div>
+			<div class="collapse navbar-collapse navbar-right" id="example-navbar-collapse">
+				<ul class="nav navbar-nav">
+					<li><a href="resource.html" class="myNavLink">Resources</a></li>
+					<li><a href="story.html" class="myNavLink">Stories</a></li>
+					<li><a href="news.html" class="myNavLink">News</a></li>
+					<li><a href="us.html" class="myNavLink">Who we are</a></li>
+					<li><a class="glyphicon glyphicon-search"></a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<div class="myContainer us-container">
+		<h4 class="us-header">KO TĀTOU NEI</h4>
+		<h4 class="us-header">IT'S WHO WE ARE</h4>
+		<p class="us-content">
+			New Zealand is a progressive nation of creative idea-makers delivering new solutions, while always caring for
+			people and place. Our story is grounded in our values – it’s who we are, what we stand for and what we offer the
+			world. Good things come from our country and the more the world knows about these, the greater chance we have to
+			grow our globalus- reputation.</p>
+		<span class="us-tips">scroll</span>
+		<div class="divide"></div>
+		<h4 class="us-header" style="font-size: 60px;">OUR VALUES</h4>
+		<div class="divide"></div>
+		<div class="row">
+			<div class="col-md-4 us-wrapper">
+				<div class="w1">
+					<small class="num">01</small>
+					<i class="line"></i>
+					<p class="title">kaitiaki</p>
+					<div class="hidden-box">
+						<small class="box-num">01</small>
+						<p class="box-body">Care of people and place (our role as guardians). We are
+							guardians of people, place and planet. This care extends
+							to everything we do and everything we create. We are
+							considered a progressive nation yet we seek not to
+							damage what is precious.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4 us-wrapper">
+				<div class="w2">
+					<small class="num">02</small>
+					<i class="line"></i>
+					<p class="title">integrity</p>
+					<div class="hidden-box">
+						<small class="box-num">02</small>
+						<p class="box-body">Care of people and place (our role as guardians). We are
+							guardians of people, place and planet. This care extends
+							to everything we do and everything we create. We are
+							considered a progressive nation yet we seek not to
+							damage what is precious.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4 us-wrapper">
+				<div class="w3">
+					<small class="num">03</small>
+					<i class="line"></i>
+					<p class="title">seasie</p>
+					<div class="hidden-box">
+						<small class="box-num">03</small>
+						<p class="box-body">Care of people and place (our role as guardians). We are
+							guardians of people, place and planet. This care extends
+							to everything we do and everything we create. We are
+							considered a progressive nation yet we seek not to
+							damage what is precious.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="divide"></div>
+	<div class="divide"></div>
+
+	<div class="myContainer">
+		<div class="row">
+			<div class="col-md-4">
+				<h4 class="header">WE OFFER THE WORLD A FRESH PERSPECTIVE</h4>
+				<p class="content">New Zealand is well-known for the beauty of its landscapes and the friendliness of its
+					people. We have a reputation for doing the right thing, even when nobody is watching.New Zealand is a
+					creative place – restless, adventurous, unbound by convention. We are able to work with others to find
+					brave new ways of addressing problems that others may not have thought of.</p>
+			</div>
+			<div class="col-md-8" style="position: relative;">
+				<i class="decoration"></i>
+				<img src="https://www.nzstory.govt.nz/assets/4a9731b914/01CWNZS_NZS_3489-v2.jpg" class="picture">
+			</div>
+		</div>
+	</div>
+
+	<div class="divide"></div>
+	<div class="divide"></div>
+
+	<footer class="myContainer myFooter">
+		<div class="row">
+			<div class="col-md-6">
+				<div class="row">
+					<div class="col-md-6">
+						<span class="tip1">About Us</span>
+						<a href="us.html" class="footer-link">Who we are</a>
+						<a href="story.html" class="footer-link">Our Story</a>
+						<a href="news.html" class="footer-link">News & Media</a>
+						<a href="touch.html" class="footer-link">Contact Us</a>
+						<a href="question.html" class="footer-link">FAQ's</a>
+					</div>
+					<div class="col-md-6">
+						<span class="tip1">Connected with</span>
+						<a href="#" class="footer-link">enz.govt.nz</a>
+						<a href="#" class="footer-link">mfat.govt.nz</a>
+						<a href="#" class="footer-link">mpi.govt.nz</a>
+						<a href="#" class="footer-link">nzte.govt.nz</a>
+						<a href="#" class="footer-link">tpk.govt.nz</a>
+						<a href="#" class="footer-link">tourismnewzealand.com</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<span class="tip2">Stay connected with us. Subscribe
+					to our newsletter for the latest news, updates and
+					resources</span>
+				<div class="row" style="display: flex;align-items: center;">
+					<div class="col-md-5 col-xs-5">
+						<span class="footer-font">First Name</span>
+					</div>
+					<div class="col-md-6 col-xs-5">
+						<span class="footer-font">Email</span>
+					</div>
+					<div class="col-md-1 col-xs-2">
+						<span class="glyphicon glyphicon-arrow-right" style="color:var(--theme-color);font-size:10px;"></span>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-5 col-xs-5">
+						<input type="text" class="footer-input" />
+					</div>
+					<div class="col-md-7 col-xs-7">
+						<input type="email" class="footer-input" />
+					</div>
+				</div>
+				<span class="footer-font">Recaptcha</span>
+			</div>
+		</div>
+		<div class="row" style="display: flex;align-items: center;margin-top: 120px">
+			<div class="col-md-4">
+				<span class="footer-font">2020 © New Zealand Story | Building a nation of storytellers </span>
+			</div>
+			<div class="col-md-3">
+				<a href="#" class="footer-font">Privacy Statement</a>
+			</div>
+			<div class="col-md-5 text-right">
+				<span class="footer-round"></span>
+				<span class="footer-round"></span>
+				<span class="footer-round"></span>
+				<span class="footer-round"></span>
+				<span class="footer-round"></span>
+			</div>
+		</div>
+	</footer>
+	
+	<!-- javascript part -->
+	<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+	<script src="https://cdn.staticfile.org/twitter-bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+	<script>
+		$('.carousel').carousel();
+		window.addEventListener('scroll', function () {
+			let t = $('body, html').scrollTop(); // scroll bar distance
+			if (t > 0) {
+				$('.navbar-style').addClass('navbar-style-white');
+			} else {
+				$('.navbar-style').removeClass('navbar-style-white');
+			}
+		})
+	</script>
+</body>
+
+</html>

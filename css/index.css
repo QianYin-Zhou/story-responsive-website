@@ -1,0 +1,761 @@
+/* index.css文件 */
+
+.navbar-style {
+	border: 0px;
+	background-color: transparent;
+	z-index: 99;
+	padding: 10px;
+	transition: var(--my-transition);
+}
+
+.navbar-style ul {
+	margin-top: 10px;
+}
+
+.navbar-style li a {
+	color: white !important;
+}
+
+.navbar-style li a:hover {
+	color: white;
+	background-color: var(--theme-color) !important;
+	border-radius: 5px;
+}
+
+.myLogo {
+	display: block;
+	width: 200px;
+	height: 68px;
+	max-width: 40vw;
+	max-height: 15vw;
+	-webkit-transition: height .3s ease-in-out 0s;
+	transition: height .3s ease-in-out 0s;
+	background-image: url("../img/nzstory_logo_light.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+/*append navbar-style-white */
+.navbar-style-white {
+	background-color: white;
+	color: black;
+	box-shadow: 0 0 30px rgba(0, 0, 0, .08);
+}
+
+.navbar-style-white li a {
+	color: black !important;
+}
+
+.navbar-style-white .navbar-header .myLogo {
+	display: block;
+	width: 200px;
+	height: 68px;
+	max-width: 40vw;
+	max-height: 15vw;
+	-webkit-transition: height .3s ease-in-out 0s;
+	transition: height .3s ease-in-out 0s;
+	background-image: url("../img/nzstory_logo_dark.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.myNavLink {
+	font-family: gotham book;
+	color: white;
+	font-weight: 500;
+}
+
+#myCarousel img {
+	width: 100%;
+	height: 580px;
+}
+
+.item:after {
+	content: '';
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0.48);
+	color: white;
+}
+
+.myCaption {
+	top: 170px;
+}
+
+.myCaption>h2 {
+	margin-bottom: 3%;
+}
+
+.myCaption>p {
+	margin-bottom: 60px;
+}
+
+.myBtn {
+	transition: var(--my-transition);
+	font-family: gotham book;
+	text-transform: uppercase;
+	letter-spacing: normal;
+	font-weight: 500;
+	font-size: 12px;
+	border: 1px solid white;
+	border-radius: 0.2em;
+	color: white;
+	margin: 0px 20px;
+	padding: 1.125em 1.875em;
+}
+
+.myBtn:hover {
+	background-color: var(--theme-color);
+	color: white;
+	font-weight: 200;
+	text-decoration: none;
+	border: 0;
+}
+
+/*  */
+.myItemContainer {
+	position: absolute;
+	width: 100%;
+	height: 250px;
+	overflow: hidden;
+	box-sizing: border-box;
+	padding: var(--md-padding);
+	top: 470px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+	/*see*/
+}
+
+.mySubItem {
+	flex: 1;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	box-sizing: border-box;
+	padding: 7px;
+}
+
+.mySubItem .sub-item {
+	width: 100%;
+	/* min-width: 391px; */
+	height: 100%;
+	display: flex;
+	flex-flow: row wrap;
+	align-content: space-between;
+	justify-content: center;
+	background-color: #212121;
+	border-radius: 2px;
+	border-bottom: 8px solid var(--theme-color);
+	transition: var(--my-transition);
+	padding: 40px;
+	box-sizing: border-box;
+}
+
+.mySubItem .sub-item:hover {
+	background-color: var(--theme-color);
+}
+
+.sub-item .item-header {
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	color: white;
+	font-size: 34px;
+	font-family: knockout;
+}
+
+.sub-item .item-body {
+	color: white;
+	font-family: gotham book;
+	font-weight: 400;
+	text-align: center;
+	font-size: 13px;
+	line-height: 1.93;
+}
+
+.sub-item .item-footer {
+	font-family: gotham book;
+	text-transform: uppercase;
+	color: white;
+	letter-spacing: 1px;
+	font-weight: 500;
+	font-size: 11px;
+}
+
+.myContainer {
+	box-sizing: border-box;
+	width: 100%;
+	padding: var(--md-padding);
+	overflow: hidden;
+}
+
+.myContainer.sp-container {
+	margin-top: 770px;
+}
+
+.myContainer .myHeader {
+	font-size: 34px;
+	font-family: knockout;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	line-height: 1;
+	font-weight: 400;
+}
+
+.myContainer .myAll {
+	transition: all .2s ease-in-out;
+	padding: 0.825rem .1rem;
+	border-bottom: 2px solid var(--theme-color);
+	font-family: gotham book;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: bold;
+	font-size: 11px;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	word-break: break-all;
+}
+
+.myContainer .myAll:hover {
+	border-color: black;
+}
+
+.myContainer img {
+	width: 100%;
+	overflow: hidden;
+}
+
+.myNormalContent {
+	padding: 0px;
+	position: relative;
+}
+
+.myNormalContent>img {
+	width: 100%;
+}
+
+.normal-content {
+	cursor: pointer;
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0px;
+	box-sizing: border-box;
+	padding: 9%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	/* transition: top .45s ease-in-out; */
+}
+
+.normal-content:hover {
+	top: 0px;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.normal-content:hover .body {
+	display: block;
+}
+
+.normal-content:hover .footer {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: row;
+}
+
+.normal-content .sub-header {
+	font-family: gotham book;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	line-height: normal;
+	font-weight: 500;
+	font-size: 11px;
+	color: white;
+}
+
+.normal-content .header {
+	font-size: 34px;
+	font-family: knockout;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	line-height: 1;
+	font-weight: 400;
+	color: white;
+	margin-bottom: 30px;
+}
+
+.normal-content .body {
+	display: none;
+	font-size: 13px;
+	font-weight: 400;
+	line-height: 1.93;
+	font-family: Gotham Book;
+	color: white;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.normal-content .footer {
+	color: white;
+	display: none;
+}
+
+.normal-content .footer>small {
+	font-family: gotham book;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	line-height: normal;
+	font-weight: 500;
+	font-size: 11px;
+	color: white;
+}
+
+.normal-content .footer>span {
+	font-size: 12px;
+	color: var(--theme-color);
+}
+
+.myContainer .myCaption {
+	width: 100%;
+	overflow: hidden;
+}
+
+.myContainer .myCaption .news-img {
+	width: 100%;
+	transition: .5s;
+}
+
+.myCaption .news-img:hover {
+	transform: scale(1.1);
+	cursor: pointer;
+	background-color: rgba(0, 0, 0, 0.48);
+}
+
+.myCaption .sub-header {
+	font-family: gotham book;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	line-height: normal;
+	font-weight: 500;
+	font-size: 11px;
+	margin-top: 1.5em;
+}
+
+.myCaption .header {
+	font-family: gotham book;
+	display: inline-block;
+	border-bottom: 3px solid transparent;
+	transition: all .2s ease-in-out;
+	font-size: 30px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	line-height: 1;
+	font-weight: bolder;
+	color: black;
+	margin: .625rem 0 0;
+}
+
+.myCaption .body {
+	color: #1a1a1a;
+	font-family: gotham book;
+	text-transform: none;
+	letter-spacing: normal;
+	font-weight: 400;
+	line-height: 1.8;
+	font-size: 14px;
+	margin: .625rem 0 .625rem 0;
+}
+
+.myCard {
+	box-shadow: rgba(0, 0, 0, .28);
+}
+
+.myCard .card-content {
+	width: 100%;
+	padding: 7% 10%;
+	box-sizing: border-box;
+	background-color: #191919;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	flex-direction: column;
+	transition: .4s;
+}
+
+.myCard .card-content:hover {
+	background-color: var(--theme-color);
+}
+
+.myCard .sub-header {
+	font-family: gotham book;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 500;
+	font-size: 11px;
+}
+
+.myCard .header {
+	font-family: gotham book;
+	line-height: 1.6;
+	font-weight: bolder;
+	font-size: 17px;
+	margin-top: 5%;
+}
+
+.myCard .footer {
+	font-family: gotham book;
+	font-weight: 300;
+	font-size: 12px;
+	margin-top: 5%;
+}
+
+.myContainer .myBox {
+	padding: 0.6% 1%;
+}
+
+.myBox .box-content {
+	width: 100%;
+	position: relative;
+}
+
+.myBox .box-content:after {
+	content: '';
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0.27);
+	color: white;
+}
+
+.box-content:hover {
+	cursor: pointer;
+}
+
+.box-content .myTip {
+	position: absolute;
+	top: 15px;
+	left: 10px;
+	text-transform: uppercase;
+	font-family: gotham book;
+	letter-spacing: 1px;
+	font-weight: bolder;
+	font-size: 11px;
+	color: white;
+	z-index: 99;
+}
+
+.box-content .box-desc {
+	position: absolute;
+	bottom: 25px;
+	left: 10px;
+	font-family: gotham book;
+	text-transform: uppercase;
+	font-weight: bolder;
+	font-size: 18px;
+	color: white;
+	z-index: 99;
+}
+
+.myContainer .dream-company-icon {
+	width: 70%;
+	filter: grayscale(0%);
+}
+
+.myContainer .dream-company-icon:hover {
+	filter: grayscale(100%);
+}
+
+
+.myContainer.myFooter {
+	background: #1a1a1a;
+	padding-top: 11%;
+	padding-bottom: 5%;
+}
+
+.myFooter .tip1 {
+	display: block;
+	font-weight: bolder;
+	font-size: 19px;
+	letter-spacing: 1px;
+	font-family: gotham book;
+	color: white;
+}
+
+.myFooter .tip2 {
+	font-family: gotham book;
+	line-height: 1.8em;
+	font-size: 18px;
+	font-weight: lighter;
+	color: white;
+}
+
+.myFooter .footer-link {
+	display: block;
+	color: #97989a;
+	text-decoration: none;
+	transition: color .3s ease-in-out 0s;
+	font-weight: 400;
+	font-size: 15px;
+	line-height: 1.9rem;
+	margin: 6% 0;
+}
+
+.myFooter .footer-link:hover {
+	color: white;
+}
+
+.myFooter .footer-font {
+	display: block;
+	font-weight: 600;
+	font-size: 13px;
+	color: #97989a;
+	margin: 5% 0;
+}
+
+.myFooter .footer-input {
+	width: 100%;
+	border: 0;
+	outline: none;
+	border-bottom: 1px solid #97989a;
+	background-color: transparent;
+	font-size: 18px;
+	color: white;
+}
+
+.footer-input:focus {
+	outline: none;
+	border-bottom: 1px solid white;
+}
+
+.myFooter .footer-round {
+	display: inline-block;
+	margin: 3%;
+	width: 55px;
+	height: 55px;
+	border-radius: 50%;
+	border: 1px solid var(--theme-color);
+	transition: var(--my-transition);
+}
+
+.footer-round:hover {
+	background-color: var(--theme-color);
+}
+
+/* 响应式 */
+@media(max-width: 768px) {
+	.divide {
+		width: 100%;
+		height: 27px;
+	}
+
+	.myLogo {
+		display: block;
+		width: 130px;
+		height: 50px;
+		transition: height .3s ease-in-out 0s;
+		background-size: contain;
+		background-repeat: no-repeat;
+	}
+
+	.navbar-style-white .navbar-header .myLogo {
+		display: block;
+		width: 130px;
+		height: 50px;
+		max-width: 40vw;
+		max-height: 15vw;
+		-webkit-transition: height .3s ease-in-out 0s;
+		transition: height .3s ease-in-out 0s;
+		background-image: url("../img/nzstory_logo_dark.png");
+		background-size: contain;
+		background-repeat: no-repeat;
+	}
+
+	#myCarousel img {
+		height: 400px;
+	}
+
+	#myCarousel img:after {
+		content: '';
+		display: inline-block;
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		opacity: 0.7;
+		background: #191919;
+	}
+
+	.myCaption {
+		top: 55px
+	}
+
+	.myCaption h2 {
+		font-size: 14px;
+		font-family: gotham medium;
+	}
+
+	.myCaption p {
+		font-size: 11px;
+		font-weight: 100;
+		font-family: gotham book;
+		margin-top: 20px;
+		margin-bottom: 60px;
+	}
+
+	.myBtn {
+		padding: .825em 1.875em;
+		font-size: 8px;
+		display: flex;
+		justify-content: center;
+		width: 95%;
+		margin: 17px auto;
+	}
+
+	.myItemContainer {
+		position: absolute;
+		height: 100%;
+		width: 100%;
+		overflow: hidden;
+		box-sizing: border-box;
+		top: 430px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		/*see*/
+	}
+
+	.mySubItem {
+		height: 200px;
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		box-sizing: border-box;
+		padding: 7px;
+	}
+
+	.mySubItem .sub-item {
+		width: 100%;
+		height: 100%;
+		display: flex;
+		flex-flow: row wrap;
+		align-content: space-between;
+		justify-content: center;
+		background-color: #212121;
+		border-radius: 2px;
+		border-bottom: 8px solid var(--theme-color);
+		transition: var(--my-transition);
+		padding: 20px;
+		box-sizing: border-box;
+	}
+
+	.sub-item .item-header {
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		color: white;
+		font-size: 25px;
+		font-family: knockout;
+	}
+
+	.sub-item .item-header>span {
+		font-size: 20px;
+	}
+
+	.sub-item .item-body {
+		color: white;
+		font-family: gotham book;
+		font-weight: 400;
+		text-align: center;
+		font-size: 10px;
+		line-height: 1.93;
+	}
+
+	.sub-item .item-footer {
+		font-family: gotham book;
+		text-transform: uppercase;
+		color: white;
+		letter-spacing: 1px;
+		font-weight: 500;
+		font-size: 8px;
+	}
+
+	.myContainer {
+		box-sizing: border-box;
+		width: 100%;
+		padding: var(--sm-padding);
+	}
+
+	.myContainer.sp-container {
+		margin-top: 1070px;
+	}
+
+	.normal-content {
+		position: static;
+		width: 100%;
+		height: 280px;
+		box-sizing: border-box;
+		padding: 3%;
+		background-color: rgba(0, 0, 0, 0.88);
+	}
+
+	.normal-content:hover {
+		background-color: rgba(0, 0, 0, 0.88);
+	}
+
+	.normal-content .sub-header {
+		letter-spacing: 2px;
+		font-size: 10px;
+		color: white;
+	}
+
+	.normal-content .header {
+		font-size: 25px;
+		margin-bottom: 20px;
+	}
+
+	.normal-content .body {
+		display: block;
+		font-size: 10px;
+	}
+
+	.normal-content .footer {
+		display: block;
+	}
+
+	.normal-content .footer>small {
+		font-size: 10px;
+	}
+
+	.normal-content .footer>span {
+		font-size: 11px;
+	}
+
+	.myCaption .header {
+		font-size: 20px;
+		letter-spacing: normal;
+	}
+
+
+}

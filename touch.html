@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Contact Us | New Zealand Story | Building a nation of storytellers</title>
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/theme.css" type="text/css">
+	<link rel="stylesheet" href="css/public.css" type="text/css">
+	<!-- css code -->
+	<style>
+		.touch-img {
+			width: 100%;
+			margin-left: -15%;
+		}
+
+		.touch-wrapper {
+			width: 100%;
+			height: 100%;
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			justify-content: center;
+		}
+
+		.touch-wrapper .header {
+			font-size: 38px;
+			line-height: 1.1;
+			font-family: knockout;
+			text-transform: uppercase;
+			color: #212121;
+		}
+
+		.touch-wrapper .content {
+			font-family: gotham book;
+			line-height: 2;
+			margin-top: 1%;
+		}
+
+		form input:focus,
+		form textarea:focus {
+			border-color: var(--theme-color) !important;
+			box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px var(--theme-color) !important;
+		}
+
+		.myBtn {
+			width: 120px;
+			font-size: 14px;
+			line-height: 45px;
+			text-align: center;
+			color: #fff;
+			background-color: var(--theme-color);
+			border: none;
+			transition: all .3s ease-in-out;
+			margin: 2% 0;
+		}
+
+		.myBtn:hover {
+			background: #212121;
+			outline: none;
+		}
+	</style>
+</head>
+
+<body>
+	<nav class="navbar navbar-default navbar-style navbar-fixed-top" role="navigation">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example-navbar-collapse">
+					<span class="sr-only">切换导航</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="myLogo" href="index.html"></a>
+			</div>
+			<div class="collapse navbar-collapse navbar-right" id="example-navbar-collapse">
+				<ul class="nav navbar-nav">
+					<li><a href="resource.html" class="myNavLink">Resources</a></li>
+					<li><a href="story.html" class="myNavLink">Stories</a></li>
+					<li><a href="news.html" class="myNavLink">News</a></li>
+					<li><a href="us.html" class="myNavLink">Who we are</a></li>
+					<li><a class="glyphicon glyphicon-search"></a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<div class="myContainer" style="margin-top: 100px;">
+		<div class="row">
+			<div class="col-md-5">
+				<img src="./img/touch-me.jpg" alt="" class="touch-img">
+			</div>
+			<div class="col-md-7">
+				<div class="touch-wrapper">
+					<h3 class="header">GET IN TOUCH WITH CISSY. </h3>
+					<p class="content">Please use the form below to send us an
+						enquiry, and one of our team will be in touch with
+						you shortly.</p>
+					<p class="content" style="width: 65%;">Or you can reach us at our Auckland office:
+						Level 6, 139 Quay Street, Auckland CBD, Auckland 1010
+						PO Box 2364, Shortland Street Auckland 1140 New Zealand</p>
+					<p class="content">Phone: + 138 240 708 27</p>
+				</div>
+				<div class="divide"></div>
+				<!-- form operation -->
+				<form role="form">
+					<div class="form-group" style="width: 40%;display: inline-block;">
+						<label for="name">Your Name:</label>
+						<input type="text" class="form-control" id="name" />
+					</div>
+					<div class="form-group" style="width: 40%;display: inline-block;margin-left: 5%;">
+						<label for="name">Email:</label>
+						<input type="email" class="form-control" id="name" />
+					</div>
+					<div class="form-group" style="margin-top: 1%;">
+						<label for="name">Your Message:</label>
+						<textarea class="form-control" rows="2"></textarea>
+					</div>
+					<button type="submit" class="myBtn">submit</button>
+				</form>
+			</div>
+		</div>
+	</div>
+	<footer class="myContainer myFooter">
+		<div class="row">
+			<div class="col-md-6">
+				<div class="row">
+					<div class="col-md-6">
+						<span class="tip1">About Us</span>
+						<a href="us.html" class="footer-link">Who we are</a>
+						<a href="story.html" class="footer-link">Our Story</a>
+						<a href="news.html" class="footer-link">News & Media</a>
+						<a href="touch.html" class="footer-link">Contact Us</a>
+						<a href="question.html" class="footer-link">FAQ's</a>
+					</div>
+					<div class="col-md-6">
+						<span class="tip1">Connected with</span>
+						<a href="#" class="footer-link">enz.govt.nz</a>
+						<a href="#" class="footer-link">mfat.govt.nz</a>
+						<a href="#" class="footer-link">mpi.govt.nz</a>
+						<a href="#" class="footer-link">nzte.govt.nz</a>
+						<a href="#" class="footer-link">tpk.govt.nz</a>
+						<a href="#" class="footer-link">tourismnewzealand.com</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<span class="tip2">Stay connected with us. Subscribe
+					to our newsletter for the latest news, updates and
+					resourceources</span>
+				<div class="row" style="display: flex;align-items: center;">
+					<div class="col-md-5 col-xs-5">
+						<span class="footer-font">First Name</span>
+					</div>
+					<div class="col-md-6 col-xs-5">
+						<span class="footer-font">Email</span>
+					</div>
+					<div class="col-md-1 col-xs-2">
+						<span class="glyphicon glyphicon-arrow-right" style="color:var(--theme-color);font-size:10px;"></span>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-5 col-xs-5">
+						<input type="text" class="footer-input" />
+					</div>
+					<div class="col-md-7 col-xs-7">
+						<input type="email" class="footer-input" />
+					</div>
+				</div>
+				<span class="footer-font">Recaptcha</span>
+			</div>
+		</div>
+		<div class="row" style="display: flex;align-items: center;margin-top: 120px">
+			<div class="col-md-4">
+				<span class="footer-font">2020 © New Zealand Story | Building a nation of storytellers </span>
+			</div>
+			<div class="col-md-3">
+				<a href="#" class="footer-font">Privacy Statement</a>
+			</div>
+			<div class="col-md-5 text-right">
+				<span class="footer-round"></span>
+				<span class="footer-round"></span>
+				<span class="footer-round"></span>
+				<span class="footer-round"></span>
+				<span class="footer-round"></span>
+			</div>
+		</div>
+	</footer>
+
+	<!-- javascript part -->
+	<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+	<script src="https://cdn.staticfile.org/twitter-bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<script src="./js/public.js"></script>
+</body>
+
+</html>
